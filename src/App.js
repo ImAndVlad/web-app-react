@@ -54,8 +54,7 @@ function App() {
         const data = {
             cartItems
         }
-        // telegram.sendData(JSON.stringify(data));
-        telegram.sendData(data)
+        telegram.sendData(JSON.stringify(data));
     }, [cartItems])
 
     useEffect(() => {
